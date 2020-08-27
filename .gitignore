@@ -1,1 +1,12 @@
 /node_modules/
+.idea/.gitignore
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/udemy-react-the-complete-guide-incl-redux---seccion-04.iml
+.idea/vcs.xml
+README.md
+package-lock.json
+package.json
+public/
+src/
