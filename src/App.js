@@ -35,14 +35,17 @@ class App extends Component {
     }
 
     togglePersonHandler = () => {
-        const doesShow = this.state.persons;
+        const doesShow = this.state.showPersons;
         this.setState({showPersons: !doesShow})
     }
 
+
+
     render() {
         const style = {
-            backgroundColor: 'yellow',
-            border: '10px'
+            backgroundColor: 'gray',
+            border: '5px solid black',
+            borderRadius:'15px'
         }
 
         let person = null;
@@ -60,15 +63,15 @@ class App extends Component {
             );
         }
         return <div className="App">
-            <h1>Hi this is my first react application</h1>
+            <h1>Working with Lists and Conditionals</h1>
             <button
                 style={style}
-                onClick={this.switchNameHandler}>Click on me
+                onClick={this.togglePersonHandler}>Show or not the  person list
             </button>
             <p>This is really working</p>
 
         <div>
-
+            { this.state.showPersons? person:null         }
         </div>
         </div>
         //React.createElement('div', {className:'App'},React.createElement('h1',null,"Hello every one")));
